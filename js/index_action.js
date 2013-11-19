@@ -16,6 +16,12 @@ function initialize() {
 
 	var map = new google.maps.Map(document.getElementById('board-map'), mapOptions);
 
+	var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  	});
+
+  	var contentString = 'TODO: computer infomation inside';
+
 	var drawingManager = new google.maps.drawing.DrawingManager({
 								drawingMode: google.maps.drawing.OverlayType.MARKER,
 								drawingControl: true,
